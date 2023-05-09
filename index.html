@@ -2,9 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Montserrat:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>vocout</title>
   </head>
+
   <body>
-    <h1>vocout</h1>
+    <section id="heading-section">
+      <div class="heading">
+        <p>vocout</p>
+      </div>
+      <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="row navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="col nav-item">
+                  <a class="navbar-text-custom nav-link" href="#about-section"
+                    >About</a
+                  >
+                </li>
+                <li class="col nav-item">
+                  <a
+                    class="navbar-text-custom nav-link"
+                    href="#training-section"
+                    >Training</a
+                  >
+                </li>
+                <li class="col nav-item">
+                  <a class="navbar-text-custom nav-link" href="#footer"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <section id="about-section">
+      <div class="row about-container">
+        <div class="col">
+          <div class="about-text">
+            Being able to communicate worldwide is very important nowadays. It
+            is good that nowadays it is enough to learn only one language:
+            English. Of course, the best way to learn it is to use the language
+            and speak it easily. But this is only possible with a certain
+            vocabulary. You usually learn this vocabulary in school. But what if
+            you don't? For that we want to introduce you this tool! Our idea is
+            to provide a simple vocabulary trainer online, which can be used for
+            free by anyone who knows the German language and wants to learn
+            English. No registration is necessary, just get started right away!
+          </div>
+        </div>
+        <div class="col about-eyecatcher">
+          <div class="eyecatcher-text">
+            <p>train hard</p>
+          </div>
+          <div class="eyecatcher-text">
+            <p>speak easy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="training-section">
+      <div class="training-container">
+        <h3 class="heading-training">german</h3>
+        <div class="vocable"><p class="vocable-text"></p></div>
+        <h3 class="heading-training">english</h3>
+        <textarea class="vocable-input"> </textarea>
+        <button type="button" class="check-button btn btn-outline-dark btn-lg">
+          Check
+        </button>
+      </div>
+    </section>
+
+    <script src="index.js" charset="UTF-8"></script>
   </body>
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-facebook-f"></i>
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p>© Copyright 2023 Vitali Altuchow | All Rights Reserved</p>
+    </div>
+  </footer>
 </html>
