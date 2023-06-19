@@ -1,14 +1,18 @@
-body{
-    text-align: center;
-    background-color: rgb(222, 222, 222);
-    font-family: 'Montserrat';
+:root {
+    --mint: #97f7bc;
+    --bright-grey: rgb(222, 222, 222);
+    --grey: rgb(197, 197, 197);
+    --dark-grey: #3f3f3f;
+    --right-green: rgb(152, 196, 144);
+    --false-red: rgb(203, 137, 137);
 }
 
-/* Heading Section */
 
-.heading{
-    background-color: rgb(48, 47, 47);
-    color: #97f7bc;
+/* Header */
+
+.heading-container {
+    background-color: var(--dark-grey);
+    color: var(--mint);
     padding: 4% 10%;
     letter-spacing: 40px;
     font-weight: 100;
@@ -16,25 +20,41 @@ body{
     font-size: 3rem;
 }
 
-.navbar-container{
-    background-color:rgb(197, 197, 197);
+.navbar {
+    background-color: var(--grey);
 }
 
-.navbar-text-custom{
+.navbar ul {
+    width: 100%;
+}
+
+.navbar-text {
     letter-spacing: 10px;
     color: white;
 }
 
-/* About Section */
-
-.eyecatcher-text{
-    transform: rotate(20deg);
-    font-family: 'Lily Script One';
-    font-size: 5rem;
-    text-shadow: 2px 2px #97f7bc;
-    color: #3f3f3f;
-    margin-top: 50px;
+.navbar-toggler {
+    border: none;
 }
+
+
+/* Body */
+
+body {
+    text-align: center;
+    background-color: var(--bright-grey);
+    font-family: 'Montserrat';
+}
+
+hr {
+    border: solid var(--grey) 8px;
+    border-bottom: none;
+    width: 50%;
+    margin: 38px auto;
+}
+
+
+/* About Section */
 
 .about-container {
     margin: 50px 20px 100px 20px;
@@ -49,102 +69,98 @@ body{
     padding-right: 10%;
 }
 
+.eyecatcher-text {
+    margin-top: 50px;
+    transform: rotate(20deg);
+    font-family: 'Lily Script One';
+    font-size: 5rem;
+    text-shadow: 2px 2px var(--mint);
+    color: var(--dark-grey);
+}
+
+
 /* Training Section */
 
-#training-section{
+#training {
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.training-container{
+.training-container {
     padding-bottom: 40px;
     margin: auto;
     width: 40%;
 }
 
-.vocable{
+.vocable-german {
     margin: 10px auto 50px;
+    padding: 30px;
     height: 100px;
     border-radius: 5px;
-    color: rgb(48, 47, 47);
     font-size: 1.5rem;
-    background-color: rgb(197, 197, 197);
+    color: var(--dark-grey);
+    background-color: var(--grey);
 }
 
-.vocable-text{
+.vocable-english-user-input {
+    margin-bottom: 20px;
     padding: 30px;
-}
-
-.right-translation{
-    background-color: rgb(152, 196, 144);
-}
-
-.wrong-translation{
-    background-color: rgb(203, 137, 137);
-}
-
-
-.vocable-input{
+    height: 100px;
     width: 100%;
-height: 100px;
-border-radius: 5px;
-margin-bottom: 20px;
-text-align: center;
-font-size: 1.5rem;
-padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.check-button{
-    display: block;
-    margin: 20px auto 30px;
-}
-
-.training-container h3{
+.heading-training {
     margin-top: 30px;
-}
-
-
-
-ul {
-    width: 100%;
-}
-
-
-
-hr {
-    border: solid rgb(167, 167, 167) 8px;
-    border-bottom: none;
-    width: 50%;
-    margin: 38px auto;
-  }
-
-.copyright {
-    color: #EAF6F6;
-    font-size: 0.75rem;
-    padding: 20px 0;
-}
-
-#footer {
-    background-color: #3f3f3f;
-    padding: 20px 0 20px;
-    color: #97f7bc;  
-}
-
-.social-icon {
-    margin: 30px 10px 10px;
-    color: #97f7bc;  
-}
-
-.social-icon:hover {
-    color: #fff;
-}
-
-.heading-training{
     text-align: left;
     font-size: 1rem;
 }
 
-#footer p{
-    word-spacing: 7px;
-    margin: 30px;
+.check-or-next-button {
+    display: block;
+    margin: 20px auto 30px;
 }
+
+.right-translation {
+    background-color: var(--right-green);
+}
+
+.wrong-translation {
+    background-color: var(--false-red);
+}
+
+
+/* Footer */
+
+.copyright {
+    padding: 20px 0;
+    font-size: 0.75rem;
+    color: var(--bright-grey);
+}
+
+#footer {
+    padding: 20px 0 20px;
+    background-color: var(--dark-grey);
+    color: var(--mint);
+}
+
+.social-icon {
+    margin: 30px 10px 10px;
+    color: var(--mint);
+}
+
+.social-icon:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#footer p {
+    margin: 30px;
+    word-spacing: 7px;
+}
+
+/* Media Querys */
+
+/* TODO */
